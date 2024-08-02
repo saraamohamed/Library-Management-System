@@ -7,8 +7,7 @@
 4. [Running the Application](#running-the-application)
 5. [Interacting with API Endpoints](#interacting-with-api-endpoints)
 6. [API Endpoints](#api-endpoints)
-7. [Authentication](#authentication)
-8. [Error Handling and Validation](#error-handling-and-validation)
+7. [Error Handling and Validation](#error-handling-and-validation)
 
 ### Introduction
 This documentation provides information on how to set up, run, and interact with the Library Management System API. The application allows for managing books, patrons, and borrowing records.
@@ -28,8 +27,8 @@ This documentation provides information on how to set up, run, and interact with
 
 2. **Configure the Database:**
 
--Create a database in PostgreSQL (or any preferred database).
--Update the application.properties file located in src/main/resources with your database configuration:
+- Create a database in PostgreSQL (or any preferred database).
+- Update the application.properties file located in src/main/resources with your database configuration:
  ```bash
 spring.datasource.url=jdbc:postgresql://localhost:5432/librarydb
 spring.datasource.username=your_db_username
@@ -175,7 +174,7 @@ Endpoint: PUT /api/return/{bookId}/patron/{patronId}
 Example Request:
  ```bash
 curl -X PUT http://localhost:8080/api/return/1/patron/1
-  curl -X POST http://localhost:8080/api/borrow/1/patron/1
+curl -X POST http://localhost:8080/api/borrow/1/patron/1
  ```
 2. Return a book:
 
